@@ -1,0 +1,14 @@
+# Source material directories
+knowledge/
+
+# Ignore the raw transcript file as it has been moved to the public files folder
+Testudo - Unofficial Transcript.pdf
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

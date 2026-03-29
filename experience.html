@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Mikhail Joseph</title>
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Internal styles specific to experience -->
+    <style>
+        .page-header {
+            padding-top: calc(var(--nav-height) + 4rem);
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 4rem;
+        }
+
+        /* Timeline CSS */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            height: 100%;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            padding-left: 60px;
+        }
+        
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 11px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--bg-color);
+            border: 3px solid var(--accent);
+            z-index: 2;
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        .timeline-date {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            background: rgba(96, 165, 250, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 100px;
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform var(--transition-normal), border-color var(--transition-fast);
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-highlight);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.6rem;
+            color: var(--text-primary);
+            margin-bottom: 0.2rem;
+        }
+
+        .timeline-content h4 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .timeline-content i {
+            margin-right: 0.3rem;
+        }
+
+        .timeline-content ul {
+            list-style: none;
+        }
+
+        .timeline-content li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #d1d1d6;
+        }
+
+        .timeline-content li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Mikhail<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header container reveal">
+        <h1 class="section-title gradient-text">Experience & Education</h1>
+        <p class="section-subtitle">My professional journey and academic background.</p>
+    </header>
+
+    <!-- Timeline Section -->
+    <section class="container" style="padding-top: 0;">
+        <div class="timeline">
+            
+            <!-- Experience Item 1 -->
+            <div class="timeline-item reveal stagger-1">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Nov 2025 &ndash; Present</span>
+                    <h3>Agentic AI Intern</h3>
+                    <h4><i class="ph-fill ph-buildings"></i> <a href="https://felinetails.com/" target="_blank" style="color: var(--text-primary); text-decoration: underline; text-decoration-color: var(--accent);">Feline Tails</a> &bull; Remote</h4>
+                    <ul>
+                        <li>Designed ranking and recommendation algorithms using behavioral embeddings across 50K+ user interactions, improving sitter–client match accuracy by 18%.</li>
+                        <li>Developed automated feature engineering pipelines in Python integrating CRM and platform data, enabling scalable model training on 100K+ records.</li>
+                        <li>Implemented matching and availability optimization algorithms reducing failed bookings by 22%.</li>
+                        <li>Built Power BI dashboards tracking conversion and operational metrics, reducing analytics turnaround time by 30%.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education Item -->
+            <div class="timeline-item reveal stagger-2">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Aug 2024 &ndash; May 2026</span>
+                    <h3>Master of Science, Data Science</h3>
+                    <h4><i class="ph-fill ph-graduation-cap"></i> University of Maryland, College Park</h4>
+                    <p style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 500;">
+                        GPA: 3.77/4.00
+                    </p>
+                    <ul>
+                        <li>Advanced coursework in Machine Learning, Distributed Systems, Deep Learning, and Algorithm Design.</li>
+                        <li>Member of the elite <strong>Phi Kappa Phi Honor Society</strong>, ranking in the top 10% of graduate students.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="timeline-item reveal stagger-3">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Jan 2023 &ndash; Jun 2024</span>
+                    <h3>Data Scientist</h3>
+                    <h4><i class="ph-fill ph-buildings"></i> <a href="https://expertzlab.com/" target="_blank" style="color: var(--text-primary); text-decoration: underline; text-decoration-color: var(--accent);">Expertzlab</a> &bull; Kochi, India</h4>
+                    <ul>
+                        <li>Developed predictive ML models using Python and scikit-learn on 120K+ data records, improving forecasting accuracy by 12%.</li>
+                        <li>Built SQL-based ETL pipelines and analytical datasets supporting scalable feature engineering workflows.</li>
+                        <li>Implemented robust data processing scripts in Linux environments, effectively reducing preprocessing time by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container reveal">
+            <div class="social-links">
+                <a href="https://github.com/mikhail12310" target="_blank" rel="noopener"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="mailto:mikhailc@umd.edu"><i class="ph-fill ph-envelope-simple"></i></a>
+            </div>
+            <p class="footer-text">&copy; 2026 Mikhail Joseph. Handcrafted with precision.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

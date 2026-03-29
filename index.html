@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikhail Joseph | Data Scientist & AI Engineer</title>
+    <meta name="description"
+        content="Portfolio of Mikhail Joseph, a Data Scientist & AI Engineer specializing in Deep Learning, Transformers, and scalable data pipelines.">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Internal styles specific to home -->
+    <style>
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: var(--nav-height);
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 550px;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -5%;
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background: var(--accent-gradient);
+            border-radius: 30px;
+            z-index: 0;
+            filter: blur(20px);
+            opacity: 0.4;
+            animation: pulse-glow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            from {
+                opacity: 0.3;
+                transform: scale(0.98);
+            }
+
+            to {
+                opacity: 0.6;
+                transform: scale(1.02);
+            }
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            object-position: center 20%;
+        }
+
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-item p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .featured-projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero-subtitle {
+                margin: 0 auto 2.5rem;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .stats-banner {
+                grid-template-columns: 1fr;
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            .featured-projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+    <div class="bg-glow right"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Mikhail Joseph<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+        <div class="hero-grid">
+            <div class="hero-content reveal">
+                <span class="tag" style="display:inline-block; margin-bottom: 1.5rem;"><i
+                        class="ph-fill ph-sparkle gradient-text"></i> Open to Opportunities</span>
+                <h1>Engineering <br><span class="gradient-text">Intelligence.</span></h1>
+                <p class="hero-subtitle">
+                    I'm <strong>Mikhail Joseph</strong>, a Data Scientist & AI Engineer building scalable data
+                    pipelines, deep learning models, and intelligent systems. Currently pursuing my MS in Data Science
+                    at UMD.
+                </p>
+                <div class="hero-actions">
+                    <a href="projects.html" class="btn btn-primary">
+                        View Work <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="mailto:mikhailc@umd.edu" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal stagger-2">
+                <img src="assets/images/profile.jpg" alt="Mikhail Joseph" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Projects -->
+    <section class="container" style="padding-top: 2rem;">
+        <div class="reveal">
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-subtitle">Bridging the gap between complex algorithms and impactful solutions.</p>
+        </div>
+
+        <div class="featured-projects">
+            <!-- Project 0: IRS Tax RAG -->
+            <a href="projects.html" class="card reveal stagger-1">
+                <div class="card-content">
+                    <div style="margin-bottom: 1.5rem;">
+                        <i class="ph-fill ph-file-search gradient-text" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h3>IRS Tax RAG System</h3>
+                    <p class="text-secondary" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                        Serverless RAG system for tax guidance featuring Hybrid Search combining Gemini semantic vectors
+                        and PostgreSQL BM25 via Supabase.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Azure</span>
+                        <span class="tag">LangChain</span>
+                        <span class="tag">Gemini</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 1 -->
+            <a href="projects.html" class="card reveal stagger-2">
+                <div class="card-content">
+                    <div style="margin-bottom: 1.5rem;">
+                        <i class="ph-fill ph-heartbeat gradient-text" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h3>Dynamic Tanh Transformer (DyT) for Sepsis</h3>
+                    <p class="text-secondary" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                        Transformer-based deep learning model in PyTorch analyzing ICU time-series signals across 40+
+                        variables, improving AUROC by 7% over baseline LSTM.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Healthcare AI</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="projects.html" class="card reveal stagger-3">
+                <div class="card-content">
+                    <div style="margin-bottom: 1.5rem;">
+                        <i class="ph-fill ph-database gradient-text" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h3>Foreign Currency Data Platform</h3>
+                    <p class="text-secondary" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                        End-to-end distributed data pipeline ingesting real-time FX rates, orchestrated with Airflow
+                        DAGs, reducing data latency by 35%.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Airflow</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Data Engineering</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="reveal stagger-3" style="text-align: center; margin-top: 3rem;">
+            <a href="projects.html" class="btn btn-secondary">View All Projects <i class="ph ph-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Tableau Section -->
+    <section class="container" style="padding-bottom: 4rem;">
+        <div class="reveal">
+            <h3 class="section-title" style="font-size: 2rem;"><i class="ph-fill ph-map-pin-line gradient-text"></i> Visualizing Japan Voter Turnout</h3>
+            <p class="text-secondary" style="margin-bottom: 2rem;">Interactive Tableau dashboard mapping geospatial data and regional voting demographic trends.</p>
+            <div style="border-radius: 20px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);">
+                <iframe src="https://public.tableau.com/views/Japan-VoterTurnout/Dashboard1?:showVizHome=no&:embed=true" width="100%" height="800px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Snapshot -->
+    <section class="container">
+        <div class="stats-banner reveal">
+            <div class="stat-item">
+                <h3 class="gradient-text"><a href="https://felinetails.com/" target="_blank" style="color: inherit;">Feline Tails</a></h3>
+                <p>Agentic AI Intern &bull; Present</p>
+            </div>
+            <div class="stat-item">
+                <h3>UMD</h3>
+                <p>MS Data Science &bull; 2026</p>
+            </div>
+            <div class="stat-item">
+                <h3><a href="https://expertzlab.com/" target="_blank" style="color: inherit;">Expertzlab</a></h3>
+                <p>Data Scientist &bull; 2023 - 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container reveal">
+            <div class="social-links">
+                <a href="https://github.com/mikhail12310" target="_blank" rel="noopener"><i
+                        class="ph-fill ph-github-logo"></i></a>
+                <a href="mailto:mikhailc@umd.edu"><i class="ph-fill ph-envelope-simple"></i></a>
+            </div>
+            <p class="footer-text">&copy; 2026 Mikhail Joseph. Handcrafted with precision.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
