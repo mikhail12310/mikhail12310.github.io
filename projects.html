@@ -165,6 +165,7 @@
                         <li>Enforced strict LLM grounding with exact source citations mapped to specific IRS Form and Publication excerpts.</li>
                     </ul>
                 </div>
+                <a href="https://zealous-flower-0db75870f.2.azurestaticapps.net/" target="_blank" class="project-link">View App <i class="ph ph-arrow-right"></i></a>
                 <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
                     <span class="tag">Azure</span>
                     <span class="tag">Supabase pgvector</span>
@@ -193,8 +194,31 @@
                 </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 3: CropScape -->
             <div class="project-card reveal stagger-3">
+                <i class="ph-fill ph-plant gradient-text project-icon"></i>
+                <h3 class="project-title">Crop Mapping & Rotation Analysis using Satellite Data</h3>
+                <div class="project-metrics">Geospatial ML &bull; Remote Sensing</div>
+                <div class="project-desc">
+                    <p>End-to-end geospatial machine learning pipeline analyzing crop rotation patterns and predicting future crop types using multi-year satellite-derived datasets from USDA Cropland Data Layer (CDL) time series (2016–2025).</p>
+                    <ul>
+                        <li>Implemented rolling time-series framework using 5-year crop histories to forecast upcoming season crop types at pixel level across Iowa.</li>
+                        <li>Engineered temporal (lag features, transition counts), spatial (neighborhood crop composition), and environmental features (NDVI and SMAP soil moisture).</li>
+                        <li>Designed lightweight data ingestion using three seasonal snapshots per year instead of full time-series, enabling local hardware execution.</li>
+                        <li>Achieved ~85% accuracy with strong class-wise F1 scores for corn and soybean prediction using Random Forest classifier.</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/mikhail12310/cropScape" target="_blank" class="project-link">View Code <i class="ph ph-arrow-right"></i></a>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">Python</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Rasterio</span>
+                    <span class="tag">Remote Sensing</span>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card reveal stagger-4">
                 <i class="ph-fill ph-heartbeat gradient-text project-icon"></i>
                 <h3 class="project-title">Dynamic Tanh Transformer (DyT) for Sepsis</h3>
                 <div class="project-metrics">Healthcare AI &bull; PyTorch</div>
@@ -233,25 +257,6 @@
             </div>
 
             <!-- Project 5 -->
-            <div class="project-card reveal stagger-1">
-                <i class="ph-fill ph-trend-up gradient-text project-icon"></i>
-                <h3 class="project-title">Stoxygenius &ndash; AI Stock Prediction</h3>
-                <div class="project-metrics">Financial ML &bull; LSTM + NLP</div>
-                <div class="project-desc">
-                    <p>Developed a financial prediction system utilizing LSTM networks trained on 10K+ daily financial signals.</p>
-                    <ul>
-                        <li>Improved prediction accuracy by 8% over an ARIMA baseline through sentiment-aware feature engineering.</li>
-                        <li>Processed real-time news and social media data streams to extract NLP sentiment features.</li>
-                    </ul>
-                </div>
-                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
-                    <span class="tag">LSTM</span>
-                    <span class="tag">NLP Sentiment</span>
-                    <span class="tag">Time Series</span>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
             <div class="project-card reveal stagger-2">
                 <i class="ph-fill ph-chart-polar gradient-text project-icon"></i>
                 <h3 class="project-title">Data Center Anomaly Detection</h3>
@@ -271,10 +276,10 @@
                 </div>
             </div>
 
-            <!-- Project 7 -->
+            <!-- Project 6 -->
             <div class="project-card reveal stagger-3">
                 <i class="ph-fill ph-wallet gradient-text project-icon"></i>
-                <h3 class="project-title">Finance Buddy Ecosystem</h3>
+                <h3 class="project-title">Finance Buddy / Stoxygenius</h3>
                 <div class="project-metrics">Full-Stack &bull; Finance</div>
                 <div class="project-desc">
                     <p>A full-stack financial application repository seamlessly integrating a robust Python backend and modern interactive UI for personal finance management.</p>
@@ -291,7 +296,7 @@
                 </div>
             </div>
 
-            <!-- Project 8 -->
+            <!-- Project 7 -->
             <div class="project-card reveal stagger-4">
                 <i class="ph-fill ph-shield-check gradient-text project-icon"></i>
                 <h3 class="project-title">Insurance Risk Analytics</h3>
@@ -310,11 +315,106 @@
                     <span class="tag">Python Pipeline</span>
                 </div>
             </div>
+
+            <!-- Project 8: FETII Chatbot -->
+            <div class="project-card reveal stagger-1">
+                <i class="ph-fill ph-chat-circle-text gradient-text project-icon"></i>
+                <h3 class="project-title">FETII SQL Query Chatbot</h3>
+                <div class="project-metrics">NLP &bull; LangChain SQL Agent</div>
+                <div class="project-desc">
+                    <p>Streamlit web application enabling natural language queries against a PostgreSQL database using a LangChain SQL Agent powered by Google Gemini LLM.</p>
+                    <ul>
+                        <li>Built LangChain SQL Agent that translates natural language questions into SQL queries and executes them against PostgreSQL.</li>
+                        <li>Containerized architecture with Streamlit app and PostgreSQL running as separate Docker services.</li>
+                        <li>Supports queries across trips, riders, and ride_demo tables with human-readable answer generation.</li>
+                    </ul>
+                </div>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">Gemini</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+            </div>
+
+            <!-- Project 9: ICU Sepsis Prediction -->
+            <div class="project-card reveal stagger-2">
+                <i class="ph-fill ph-heartbeat gradient-text project-icon"></i>
+                <h3 class="project-title">ICU Sepsis Prediction & Monitoring</h3>
+                <div class="project-metrics">Healthcare AI &bull; Streamlit</div>
+                <div class="project-desc">
+                    <p>Real-time sepsis prediction monitoring system for ICU patients using machine learning models deployed via Streamlit web application.</p>
+                    <ul>
+                        <li>Developed predictive models analyzing patient vitals and lab values to detect early sepsis onset.</li>
+                        <li>Built interactive dashboard for continuous monitoring of ICU patients with risk alerts and visualizations.</li>
+                        <li>Implemented model inference pipeline with real-time data processing for clinical decision support.</li>
+                    </ul>
+                </div>
+                <a href="https://icu-sepsisprediction-monitoring.streamlit.app/" target="_blank" class="project-link">View App <i class="ph ph-arrow-right"></i></a>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Healthcare</span>
+                    <span class="tag">Real-time Monitoring</span>
+                </div>
+            </div>
             
         </div>
     </section>
 
+    <!-- Upcoming Projects Section -->
+    <section class="container" style="padding-top: 2rem; padding-bottom: 3rem;">
+        <div class="reveal">
+            <h2 class="section-title" style="font-size: 2rem;">Upcoming Projects</h2>
+            <p class="section-subtitle">Innovative solutions currently in development.</p>
+        </div>
 
+        <div class="projects-grid" style="margin-top: 2rem;">
+            <!-- Upcoming Project 1: IllumiSeg -->
+            <div class="project-card reveal stagger-1">
+                <i class="ph-fill ph-sun-dim gradient-text project-icon"></i>
+                <h3 class="project-title">IllumiSeg: Illumination-Degradation-Aware Polyp Segmentation</h3>
+                <div class="project-metrics">Medical AI &bull; Deep Learning</div>
+                <div class="project-desc">
+                    <p>End-to-end deep learning model that jointly enhances illumination and segments polyps in a single forward pass, addressing the critical problem of dark-frame polyp detection in capsule endoscopy where up to 26% of polyps are missed.</p>
+                    <ul>
+                        <li>Introduces Retinex Feature Disentanglement Module (RFDM) separating encoder features into illumination and tissue streams in feature space.</li>
+                        <li>Per-pixel uncertainty map highlights dark regions and amplifies gradients during training, forcing focus on frames where existing models fail.</li>
+                        <li>Built on MiT-B2 encoder with enhancement decoder active only during training — zero inference overhead.</li>
+                        <li>Evaluated on 6 public datasets including Kvasir-SEG, CVC-ClinicDB, and cross-domain generalization tests.</li>
+                    </ul>
+                </div>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Transformers</span>
+                    <span class="tag">Medical Imaging</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+            </div>
+
+            <!-- Upcoming Project 2: SplitSmart -->
+            <div class="project-card reveal stagger-2">
+                <i class="ph-fill ph-receipt gradient-text project-icon"></i>
+                <h3 class="project-title">SplitSmart: Intelligent Bill Splitting</h3>
+                <div class="project-metrics">FinTech &bull; Smart Splitting</div>
+                <div class="project-desc">
+                    <p>Modern bill-splitting application with upgraded logic that allows users to upload bills and selectively choose items for personalized splitting among group members.</p>
+                    <ul>
+                        <li>Upload and parse receipt images with automatic item detection and price extraction using OCR.</li>
+                        <li>Interactive UI where users can select specific items and assign them to different people for fair splitting.</li>
+                        <li>Smart calculation engine handling complex scenarios including shared items, tax allocation, and tip distribution.</li>
+                        <li>Real-time balance tracking and payment reminders to ensure everyone settles their share efficiently.</li>
+                    </ul>
+                </div>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">OCR</span>
+                    <span class="tag">Mobile App</span>
+                    <span class="tag">FinTech</span>
+                    <span class="tag">User Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
