@@ -151,9 +151,32 @@
     <!-- Featured Projects Content -->
     <section class="container" style="padding-top: 0; padding-bottom: 3rem;">
         <div class="projects-grid">
-            
-            <!-- Project 1: IRS Tax RAG -->
+
+            <!-- Project 1: AML -->
             <div class="project-card reveal stagger-1">
+                <i class="ph-fill ph-shield-warning gradient-text project-icon"></i>
+                <h3 class="project-title">Anti-Money Laundering Detection using Deep Learning</h3>
+                <div class="project-metrics">Financial Security &bull; PyTorch</div>
+                <div class="project-desc">
+                    <p>Deep learning-based AML detection system using the IBM AML transaction dataset, leveraging behavioral feature engineering and threshold optimization to identify suspicious financial transactions in highly imbalanced banking data.</p>
+                    <ul>
+                        <li>Built PyTorch Feedforward Neural Network with 3 hidden layers (128 → 64 → 32 → Output) using ReLU, BatchNorm, and Dropout regularization.</li>
+                        <li>Engineered comprehensive features including time-based features, amount ratios, currency encoding, bank frequency encoding, and account-level behavioral patterns.</li>
+                        <li>Achieved ROC-AUC ≈ 0.97 with strong ranking capability; behavioral features significantly improved detection performance.</li>
+                        <li>Implemented class-weighted BCEWithLogitsLoss with threshold optimization to handle extreme class imbalance in financial fraud data.</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/mikhail12310/AML" target="_blank" class="project-link">View Code <i class="ph ph-arrow-right"></i></a>
+                <div class="tags" style="margin-top: auto; margin-bottom: 1rem;">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Fraud Detection</span>
+                    <span class="tag">Feature Engineering</span>
+                </div>
+            </div>
+
+            <!-- Project 2: IRS Tax RAG -->
+            <div class="project-card reveal stagger-2">
                 <i class="ph-fill ph-file-search gradient-text project-icon"></i>
                 <h3 class="project-title">IRS Tax RAG System for International Students</h3>
                 <div class="project-metrics">Azure Serverless &bull; Hybrid Search</div>
@@ -174,8 +197,8 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card reveal stagger-2">
+            <!-- Project 3 -->
+            <div class="project-card reveal stagger-3">
                 <i class="ph-fill ph-wifi-high gradient-text project-icon"></i>
                 <h3 class="project-title">Harmful Internet Usage Prediction</h3>
                 <div class="project-metrics">Behavioral ML &bull; Random Forest</div>
@@ -194,8 +217,8 @@
                 </div>
             </div>
 
-            <!-- Project 3: CropScape -->
-            <div class="project-card reveal stagger-3">
+            <!-- Project 4: CropScape -->
+            <div class="project-card reveal stagger-4">
                 <i class="ph-fill ph-plant gradient-text project-icon"></i>
                 <h3 class="project-title">Crop Mapping & Rotation Analysis using Satellite Data</h3>
                 <div class="project-metrics">Geospatial ML &bull; Remote Sensing</div>
@@ -217,8 +240,8 @@
                 </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="project-card reveal stagger-4">
+            <!-- Project 5 -->
+            <div class="project-card reveal stagger-1">
                 <i class="ph-fill ph-heartbeat gradient-text project-icon"></i>
                 <h3 class="project-title">Dynamic Tanh Transformer (DyT) for Sepsis</h3>
                 <div class="project-metrics">Healthcare AI &bull; PyTorch</div>
@@ -237,8 +260,8 @@
                 </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="project-card reveal stagger-4">
+            <!-- Project 6 -->
+            <div class="project-card reveal stagger-2">
                 <i class="ph-fill ph-coins gradient-text project-icon"></i>
                 <h3 class="project-title">Foreign Currency Exchange Data Platform</h3>
                 <div class="project-metrics">Data Engineering &bull; Airflow</div>
@@ -256,8 +279,8 @@
                 </div>
             </div>
 
-            <!-- Project 5 -->
-            <div class="project-card reveal stagger-2">
+            <!-- Project 7 -->
+            <div class="project-card reveal stagger-3">
                 <i class="ph-fill ph-chart-polar gradient-text project-icon"></i>
                 <h3 class="project-title">Data Center Anomaly Detection</h3>
                 <div class="project-metrics">Server Metrics &bull; Autoencoders</div>
@@ -276,8 +299,8 @@
                 </div>
             </div>
 
-            <!-- Project 6 -->
-            <div class="project-card reveal stagger-3">
+            <!-- Project 8 -->
+            <div class="project-card reveal stagger-4">
                 <i class="ph-fill ph-wallet gradient-text project-icon"></i>
                 <h3 class="project-title">Finance Buddy / Stoxygenius</h3>
                 <div class="project-metrics">Full-Stack &bull; Finance</div>
@@ -296,8 +319,8 @@
                 </div>
             </div>
 
-            <!-- Project 7 -->
-            <div class="project-card reveal stagger-4">
+            <!-- Project 9 -->
+            <div class="project-card reveal stagger-1">
                 <i class="ph-fill ph-shield-check gradient-text project-icon"></i>
                 <h3 class="project-title">Insurance Risk Analytics</h3>
                 <div class="project-metrics">Statistical ML &bull; Data Science</div>
@@ -316,8 +339,8 @@
                 </div>
             </div>
 
-            <!-- Project 8: FETII Chatbot -->
-            <div class="project-card reveal stagger-1">
+            <!-- Project 10: FETII Chatbot -->
+            <div class="project-card reveal stagger-2">
                 <i class="ph-fill ph-chat-circle-text gradient-text project-icon"></i>
                 <h3 class="project-title">FETII SQL Query Chatbot</h3>
                 <div class="project-metrics">NLP &bull; LangChain SQL Agent</div>
@@ -337,8 +360,8 @@
                 </div>
             </div>
 
-            <!-- Project 9: ICU Sepsis Prediction -->
-            <div class="project-card reveal stagger-2">
+            <!-- Project 11: ICU Sepsis Prediction -->
+            <div class="project-card reveal stagger-3">
                 <i class="ph-fill ph-heartbeat gradient-text project-icon"></i>
                 <h3 class="project-title">ICU Sepsis Prediction & Monitoring</h3>
                 <div class="project-metrics">Healthcare AI &bull; Streamlit</div>
@@ -359,8 +382,8 @@
                 </div>
             </div>
 
-            <!-- Project 10: SplitSmart -->
-            <div class="project-card reveal stagger-3">
+            <!-- Project 12: SplitSmart -->
+            <div class="project-card reveal stagger-4">
                 <i class="ph-fill ph-receipt gradient-text project-icon"></i>
                 <h3 class="project-title">SplitSmart: Intelligent Bill Splitting</h3>
                 <div class="project-metrics">FinTech &bull; Smart Splitting</div>
